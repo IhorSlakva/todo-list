@@ -20,9 +20,13 @@ body {
 }
 
 .todo-container {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
   width: 50%;
   min-height: 60%;
   padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: rgba(128, 128, 128, 0.571);
   border-radius: 20px;
   text-align: center;
@@ -64,7 +68,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  list-style: none;
+  list-style-type: none;
 }
 
 .todo-list-item {
